@@ -80,7 +80,7 @@
       margin: 0 auto;
     }
 
-    /* HEADER - Estilo Dark Studio - CENTRALIZADO */
+    /* HEADER - Estilo Dark Studio - CENTRALIZADO SIMPLIFICADO */
     .header {
       background: rgba(10, 10, 15, 0.92);
       backdrop-filter: blur(15px);
@@ -93,15 +93,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .header-content {
-      max-width: 1600px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
     }
 
     .logo {
@@ -847,9 +838,10 @@
         order: -1;
       }
 
-      .header-content {
+      .logo {
         flex-direction: column;
-        gap: 20px;
+        text-align: center;
+        gap: 10px;
       }
 
       .hero-buttons {
@@ -927,6 +919,9 @@
 
       .logo {
         font-size: 1.8em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .section-title {
@@ -949,13 +944,11 @@
   </style>
 </head>
 <body>
-  <!-- HEADER - CENTRALIZADO -->
+  <!-- HEADER - CENTRALIZADO SIMPLIFICADO -->
   <header class="header">
-    <div class="header-content">
-      <div class="logo">
-        <span class="logo-icon">🚗</span>
-        <span>UBER PREMIUM</span>
-      </div>
+    <div class="logo">
+      <span class="logo-icon">🚗</span>
+      <span>UBER PREMIUM</span>
     </div>
   </header>
 
